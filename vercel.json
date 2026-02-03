@@ -1,14 +1,1 @@
-{
-    "builds": [
-    {
-      "src": "api/outline.py",
-      "use": "@vercel/python"
-    }
-  ],
 
-"routes": [
-    {
-      "src": "/(.*)",
-      "dest": "api/outline.py"
-    }]
-}
