@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query
 from fastapi.responses import PlainTextResponse
-from mangum import Mangum
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -23,4 +23,4 @@ def outline(country: str = Query(...)):
 
     return "\n".join(outline)
 
-handler = Mangum(app)
+
